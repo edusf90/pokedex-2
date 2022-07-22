@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+
+    <!-- icone favicon -->
+    <link rel="icon" href="./favicons/favicon-16x16.png" />
+
+    <!-- Estilo css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- import do js script -->
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- gif do pokemon -->
+      <img src="" alt="pokemon" class="pokemon__image" />
+      <!-- Fim -->
+
+      <!-- Número e nome do pokemon -->
+      <h1 class="pokemon__data">
+        <span class="pokemon__number"></span>
+        <span class="pokemon__name"></span>
+      </h1>
+      <!-- Fim -->
+
+      <!-- barra de busca do pokemon -->
+      <form class="form">
+        <input
+          type="search"
+          class="input__search"
+          placeholder="Nome ou Número"
+          required
+        />
+      </form>
+      <!-- Fim -->
+
+      <!-- botões de anterior e seguinte -->
+      <div class="buttons">
+        <button class="button btn-prev">&lt Anterior</button>
+        <button class="button btn-next">Seguinte &gt</button>
+      </div>
+      <!-- Fim -->
+
+      <!-- imagem de fundo da pokedex -->
+      <img src="images/pokedex.png" alt="imagem da pokedex" class="pokedex" />
+      <!-- Fim -->
+    </main>
+  </body>
+</html>
