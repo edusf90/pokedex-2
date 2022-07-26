@@ -18,7 +18,8 @@ const fetchPokemon = async pokemon => {
 
   if (APIresponse.status == 200) {
     const data = await APIresponse.json()
-    console.log(APIresponse)
+    console.log(data.id)
+
     return data
   } else {
     pokemonImage.style.display = 'none'
@@ -26,7 +27,7 @@ const fetchPokemon = async pokemon => {
   }
 }
 
-// Renderiznaod pokemon
+// Renderizando pokemon
 const renderPokemon = async pokemon => {
   pokemonNumber.innerHTML = ''
   pokemonName.innerHTML = 'Carregando...'
@@ -67,7 +68,7 @@ buttonPrev.addEventListener('click', function () {
 
 // eventos do botão de +1
 buttonNext.addEventListener('click', function () {
-  console.log(searchPokemon)
+  // console.log(searchPokemon)
   searchPokemon = searchPokemon + 1
   if (searchPokemon > 649) {
     searchPokemon = 649
